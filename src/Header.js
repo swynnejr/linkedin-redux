@@ -9,7 +9,7 @@ import NotificationsIcon from '@material-ui/icons/Notifications'
 import HeaderOption from './HeaderOption';
 import { useDispatch }  from "react-redux";
 import { auth } from './firebase';
-import { logout } from './features/userSlice';
+import { logout} from './features/userSlice';
 
 
 function Header() {
@@ -34,7 +34,7 @@ function Header() {
                 <HeaderOption Icon={ChatIcon} title="Messaging"/>
                 <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
                 <HeaderOption
-                    avatar="https://assets.dmagstatic.com/wp-content/uploads/2019/04/Wynne-Sam_Braindead-330x220.jpg"
+                    avatar={true}
                     title='Me'
                     onClick={logoutOfApp}
                 />
