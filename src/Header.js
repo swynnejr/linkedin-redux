@@ -24,7 +24,10 @@ function Header() {
                 <a href="https://www.linkedin.com/in/sam-wynne-3499a465/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" /></a>
                 <div className="header__search">
                     <SearchIcon />
-                    <input placeholder="Search by title, skill" type="text" />
+                    <form action="">
+                        <input placeholder="Search" type="text" />
+                        <button type="submit"></button>
+                    </form>
                 </div>
             </div>
             <div className="header__right">
@@ -34,7 +37,7 @@ function Header() {
                 <a href="https://www.linkedin.com/mynetwork/">
                     <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
                 </a>
-                <a href="https://www.linkedin.com/jobs/">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away">
                     <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
                 </a>
                 <a href="https://www.linkedin.com/messaging/">

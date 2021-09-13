@@ -22,8 +22,12 @@ function Sidebar() {
                     {user.email[0]}
                 </Avatar>
 
-                <h2>{user.displayName}</h2>
-                <h4>{user.email}</h4>
+                <a href="https://www.linkedin.com/in/samwynne214/">
+                    <h2>{user.displayName}</h2>
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away">
+                    <h4>{user.email}</h4>
+                </a>
             </div>
 
             <div className="sidebar__stats">
@@ -38,11 +42,11 @@ function Sidebar() {
             </div>
             <div className="sidebar__bottom">
                 <p>Recent</p>
-                {recentItem('reactjs')}
-                {recentItem('programming')}
-                {recentItem('softwareengineering')}
-                {recentItem('design')}
-                {recentItem('developer')}
+                <a href="https://www.linkedin.com/search/results/all/?keywords=reactjs&origin=GLOBAL_SEARCH_HEADER">{recentItem('reactjs')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=programming&origin=GLOBAL_SEARCH_HEADER">{recentItem('programming')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=software%20engineering&origin=GLOBAL_SEARCH_HEADER">{recentItem('softwareengineering')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=design&origin=GLOBAL_SEARCH_HEADER">{recentItem('design')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=developer&origin=GLOBAL_SEARCH_HEADER">{recentItem('developer')}</a>
             </div>
         </div>
     )
