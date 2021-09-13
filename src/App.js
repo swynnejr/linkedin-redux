@@ -27,7 +27,7 @@ function App() {
       } else {
         dispatch(logout());
       }
-    })
+    });
   }, []);
 
   return (

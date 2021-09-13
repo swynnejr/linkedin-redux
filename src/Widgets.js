@@ -2,6 +2,8 @@ import React from 'react';
 import "./Widgets.css";
 import InfoIcon from "@material-ui/icons/Info";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
+// import NewsAPI from './NewsAPI';
+// import ResponseData from './NewsAPI'
 
 function Widgets() {
 
@@ -27,6 +29,7 @@ function Widgets() {
             {newsArticle("Tesla hits new highs", "Cars & Auto - 6,124 readers")}
             {newsArticle("Is REDUX too good?", "Programming - 429 readers")}
             {newsArticle("Bitcoin Breaks $50k AGAIN", "Crypto - 6,514 readers")}
+            {/* <NewsAPI /> */}
         </div>
     )
 }
