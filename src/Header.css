@@ -37,7 +37,7 @@
     background-color: #eef3f8;
 }
 
-.header__search > input {
+.header__search > form> input, button {
     outline: none;
     border: none;
     background: none;

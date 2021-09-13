@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import './Header.css'
 import SearchIcon from '@material-ui/icons/Search';
 import HomeIcon from '@material-ui/icons/Home'
@@ -13,19 +13,25 @@ import { logout} from './features/userSlice';
 
 
 function Header() {
+    const [search, setSearch] = useState("");
     const dispatch = useDispatch();
     const logoutOfApp = () => {
         dispatch(logout())
         auth.signOut();
     }
+    const searchInput = (e) => {
+        e.preventDefault();
+        window.location.href = `https://www.linkedin.com/search/results/all/?keywords=${search}&origin=GLOBAL_SEARCH_HEADER`
+    }
+    console.log(search);
     return (
         <div className="header">
             <div className="header__left">
                 <a href="https://www.linkedin.com/in/sam-wynne-3499a465/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" /></a>
                 <div className="header__search">
                     <SearchIcon />
-                    <form action="">
-                        <input placeholder="Search" type="text" />
+                    <form onSubmit={searchInput}>
+                        <input onChange = {(e)=>setSearch(e.target.value)} placeholder="Search" type="text"/>
                         <button type="submit"></button>
                     </form>
                 </div>
