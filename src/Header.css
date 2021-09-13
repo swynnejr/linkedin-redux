@@ -21,7 +21,7 @@
 
 /* Graphics */
 
-.header__left > img {
+.header__left > a > img {
     object-fit: contain;
     height: 40px;
     margin-right: 10px;

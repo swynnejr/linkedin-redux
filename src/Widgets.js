@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Widgets.css";
 import InfoIcon from "@material-ui/icons/Info";
 import FiberManualRecordIcon from "@material-ui/icons/FiberManualRecord";
-// import NewsAPI from './NewsAPI';
-// import ResponseData from './NewsAPI'
+import axios from 'axios';
 
 function Widgets() {
+    const [responseData, setResponseData] = useState([]);
+    useEffect(()=>{
+        axios.get('https://newsapi.org/v2/top-headlines?' +
+                  'country=us&' +
+                  'apiKey=351c2c8de7864a768021f65bacc2eea3')
+            .then((response)=>{setResponseData(response.data.articles)})
+    }, []);
+    console.log(responseData);
 
     const newsArticle = (heading, subtitle) => (
         <div className="widgets__article">
@@ -13,7 +20,7 @@ function Widgets() {
                 <FiberManualRecordIcon />
             </div>
             <div className="widgets__articleRight">
-                <h4>{heading}</h4>
+                <h6>{heading}</h6>
                 <p>{subtitle}</p>
             </div>
         </div>
@@ -24,12 +31,9 @@ function Widgets() {
                 <h2>LinkedIn News</h2>
                 <InfoIcon />
             </div>
-            {newsArticle("Full Stack Developers in high demand", "Top news - 9,342 readers")}
-            {newsArticle("Coronavirus: TX updates", "Top news - 853 readers")}
-            {newsArticle("Tesla hits new highs", "Cars & Auto - 6,124 readers")}
-            {newsArticle("Is REDUX too good?", "Programming - 429 readers")}
-            {newsArticle("Bitcoin Breaks $50k AGAIN", "Crypto - 6,514 readers")}
-            {/* <NewsAPI /> */}
+            {responseData.slice(0,4).map((articles, index)=>{
+                return (<div key={index}><a  href={articles.url}>{newsArticle(articles.title, articles.author)}</a></div>)
+            })}
         </div>
     )
 }

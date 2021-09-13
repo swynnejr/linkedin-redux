@@ -21,18 +21,28 @@ function Header() {
     return (
         <div className="header">
             <div className="header__left">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" />
+                <a href="https://www.linkedin.com/in/sam-wynne-3499a465/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" /></a>
                 <div className="header__search">
                     <SearchIcon />
-                    <input placeholder="Search" type="text" />
+                    <input placeholder="Search by title, skill" type="text" />
                 </div>
             </div>
             <div className="header__right">
-                <HeaderOption Icon={HomeIcon} title="Home"/>
-                <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
-                <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
-                <HeaderOption Icon={ChatIcon} title="Messaging"/>
-                <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
+                <a href="https://www.linkedin.com/">
+                    <HeaderOption Icon={HomeIcon} title="Home"/>
+                </a>
+                <a href="https://www.linkedin.com/mynetwork/">
+                    <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
+                </a>
+                <a href="https://www.linkedin.com/jobs/">
+                    <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
+                </a>
+                <a href="https://www.linkedin.com/messaging/">
+                    <HeaderOption Icon={ChatIcon} title="Messaging"/>
+                </a>
+                <a href="https://www.linkedin.com/notifications/">
+                    <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
+                </a>
                 <HeaderOption
                     avatar={true}
                     title='Logout'
