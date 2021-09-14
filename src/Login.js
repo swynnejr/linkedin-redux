@@ -56,32 +56,32 @@ function Login() {
                 <input
                     value={name}
                     onChange={e => setName(e.target.value)}
-                    placeholder="Full name (Required if registering)"
+                    placeholder="Full name (Only if registering)"
                     type="text"
                 />
                 <input
                     value={profilePic}
                     onChange={e => setProfilePic(e.target.value)}
-                    placeholder="Profile Pic URL (optional)"
+                    placeholder="Profile Pic URL (Optional if registering)"
                     type="text"
                 />
                 <input
                     value={email}
                     onChange={e => setEmail(e.target.value)}
-                    placeholder="Email"
+                    placeholder="Email (Member Login)"
                     type="text"
                 />
                 <input
                     value={password}
                     onChange={e => setPassword(e.target.value)}
-                    placeholder="Password"
+                    placeholder="Password (Member Login)"
                     type="password"
                 />
-                <button type="submit" onClick={loginToApp}>Sign In</button>
+                <button type="submit" onClick={loginToApp}>Member Sign In</button>
             </form>
 
             <p>Not a member?{"  "}
-                <span className="login__register" onClick={register}>Register Now</span>
+                <span className="login__register" onClick={register}>Fill in ALL fields to Register Now</span>
             </p>
         </div>
     )

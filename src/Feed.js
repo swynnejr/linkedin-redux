@@ -12,7 +12,6 @@ import firebase from 'firebase';
 import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 import FlipMove from 'react-flip-move';
-// import NewsAPI from './NewsAPI';
 
 function Feed() {
     const user = useSelector(selectUser);
@@ -76,8 +75,6 @@ function Feed() {
                     />
                 ))}
             </FlipMove>
-            {/* <NewsAPI /> */}
-            {/* <Post name='Sam Wynne' description="This is a test" message="WOW this worked" /> */}
         </div>
     )
 }

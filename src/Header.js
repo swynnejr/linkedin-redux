@@ -27,7 +27,7 @@ function Header() {
     return (
         <div className="header">
             <div className="header__left">
-                <a href="https://www.linkedin.com/in/sam-wynne-3499a465/"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" /></a>
+                <a href="https://www.linkedin.com/in/sam-wynne-3499a465/" target="_blank" rel="noopener noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ca/LinkedIn_logo_initials.png" alt="" /></a>
                 <div className="header__search">
                     <SearchIcon />
                     <form onSubmit={searchInput}>
@@ -37,19 +37,19 @@ function Header() {
                 </div>
             </div>
             <div className="header__right">
-                <a href="https://www.linkedin.com/">
+                <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
                     <HeaderOption Icon={HomeIcon} title="Home"/>
                 </a>
-                <a href="https://www.linkedin.com/mynetwork/">
+                <a href="https://www.linkedin.com/mynetwork/" target="_blank" rel="noopener noreferrer">
                     <HeaderOption Icon={SupervisorAccountIcon} title="My Network"/>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away" target="_blank" rel="noopener noreferrer">
                     <HeaderOption Icon={BusinessCenterIcon} title="Jobs"/>
                 </a>
-                <a href="https://www.linkedin.com/messaging/">
+                <a href="https://www.linkedin.com/messaging/" target="_blank" rel="noopener noreferrer">
                     <HeaderOption Icon={ChatIcon} title="Messaging"/>
                 </a>
-                <a href="https://www.linkedin.com/notifications/">
+                <a href="https://www.linkedin.com/notifications/" target="_blank" rel="noopener noreferrer">
                     <HeaderOption Icon={NotificationsIcon} title="Notifications"/>
                 </a>
                 <HeaderOption

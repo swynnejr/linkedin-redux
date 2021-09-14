@@ -22,10 +22,10 @@ function Sidebar() {
                     {user.email[0]}
                 </Avatar>
 
-                <a href="https://www.linkedin.com/in/samwynne214/">
+                <a href="https://www.linkedin.com/in/samwynne214/" target="_blank" rel="noopener noreferrer">
                     <h2>{user.displayName}</h2>
                 </a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=saucersam@gmail.com&su=Welcome%20Aboard!&body=Your%20LinkedIN%20project%20blew%20us%20away" target="_blank" rel="noopener noreferrer">
                     <h4>{user.email}</h4>
                 </a>
             </div>
@@ -42,11 +42,11 @@ function Sidebar() {
             </div>
             <div className="sidebar__bottom">
                 <p>Recent</p>
-                <a href="https://www.linkedin.com/search/results/all/?keywords=reactjs&origin=GLOBAL_SEARCH_HEADER">{recentItem('reactjs')}</a>
-                <a href="https://www.linkedin.com/search/results/all/?keywords=programming&origin=GLOBAL_SEARCH_HEADER">{recentItem('programming')}</a>
-                <a href="https://www.linkedin.com/search/results/all/?keywords=software%20engineering&origin=GLOBAL_SEARCH_HEADER">{recentItem('softwareengineering')}</a>
-                <a href="https://www.linkedin.com/search/results/all/?keywords=design&origin=GLOBAL_SEARCH_HEADER">{recentItem('design')}</a>
-                <a href="https://www.linkedin.com/search/results/all/?keywords=developer&origin=GLOBAL_SEARCH_HEADER">{recentItem('developer')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=reactjs&origin=GLOBAL_SEARCH_HEADER" target="_blank" rel="noopener noreferrer">{recentItem('reactjs')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=programming&origin=GLOBAL_SEARCH_HEADER" target="_blank" rel="noopener noreferrer">{recentItem('programming')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=software%20engineering&origin=GLOBAL_SEARCH_HEADER" target="_blank" rel="noopener noreferrer">{recentItem('softwareengineering')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=design&origin=GLOBAL_SEARCH_HEADER" target="_blank" rel="noopener noreferrer">{recentItem('design')}</a>
+                <a href="https://www.linkedin.com/search/results/all/?keywords=developer&origin=GLOBAL_SEARCH_HEADER" target="_blank" rel="noopener noreferrer">{recentItem('developer')}</a>
             </div>
         </div>
     )
